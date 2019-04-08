@@ -12,6 +12,7 @@
   <body>
     <header class="row">
        <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
          <div class="circle">
             <br />
             I'd have
@@ -20,19 +21,39 @@
             <br />
             A diferent logo
           </div> 
+        <% end %>
        </div>
         <div class="col-4 slogan">
           Splurting out unsolicited advice about capitalism since 1990
         </div>
         <div class="col-5 links">
-          <%= link_to 'Contribute', '#' %>
+          <%= link_to 'Contribute', new_quote_path %>
           <%= link_to 'About', '#' %>
         </div>
     </header>
 
     <hr />
     <br class="clear" />
+
+    <div class="container">
     
-    <%= yield %>
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "You are enough", new_quote_path, class: 'next-quote' %>
+          </div>
+          
+          <div class="col-6 footer-blurb">
+            Proudly splurted by <a href="[myoungedtech.netlify.com]"> Megan Young </a>
+            Want to splurt your own web app? <a href="https://online.bootcampspot.com">Learn how to code here</a><br />
+         </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
