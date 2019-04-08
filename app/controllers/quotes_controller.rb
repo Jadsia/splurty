@@ -8,7 +8,10 @@ class QuotesController < ApplicationController
     end
 
     def create
-        Quote.create(quote_params)
+        @quote = Quote.create(quote_params)
+        if @quote.invalid?
+            flash[:error] = '<strong>What did you say? Not saved </strong> the data you entered is too short or too long. Try again :)'
+        end
         redirect_to root_path
     end
 
