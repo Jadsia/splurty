@@ -28,7 +28,7 @@
         </div>
         <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
           <!-- Button trigger modal -->
-          <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+          <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#quoteModalLong'} %>
          &nbsp;&nbsp;
           <%= link_to 'About', about_path %>
         </div>
@@ -36,28 +36,27 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="quoteModalLong" tabindex="-1" role="dialog" aria-labelledby="quoteModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" class="text-left", id="exampleModalLongTitle"></h5>
+        <h4 class="modal-title" id="quoteModalLongTitle">Add your quote</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
         </button>
-          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
-     
       </div>
 
       <%= simple_form_for Quote.new do |f| %>
-      <div class="modal-body">
-          <%= f.input :saying, label: "What is a saying you want to add?",  placeholder: "Four score and seven years ago" %>
-          <br />
+        <div class="modal-body">
+          <%= f.input :saying, label: "What is a saying you want to add?",  placeholder: "Four score and seven years ago" %><br />
           <%= f.input :author, label: "Who said that?", placeholder: "Abraham Lincoln" %>
-      </div>
+        </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <%= f.submit 'Create! :D', class: 'btn btn-danger' %>
-      </div>
-    <% end %>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit 'Create! :D', class: 'btn btn-danger' %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
