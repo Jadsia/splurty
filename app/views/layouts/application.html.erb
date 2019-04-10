@@ -48,7 +48,7 @@
 
       <%= simple_form_for Quote.new do |f| %>
       <div class="modal-body">
-          <%= f.input :saying, label: "What is a saying you want to add?", placeholder: "Four score and seven years ago" %>
+          <%= f.input :saying, label: "What is a saying you want to add?",  placeholder: "Four score and seven years ago" %>
           <br />
           <%= f.input :author, label: "Who said that?", placeholder: "Abraham Lincoln" %>
       </div>
@@ -72,8 +72,10 @@
         </div> 
         <% end %>
 
+    <div class="container">
       <%= yield %>
     </div>
+  </div>
 
     <div class="footer">
       <div class="container">
