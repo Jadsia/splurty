@@ -8,7 +8,7 @@
 ### Project requirements
     User authentication, database storage, rails backend, hosted on heroku
     
-    Live deploy: https://splurty-megan-young.herokuapp.com/
+    Live deploy https://splurty-megan-young.herokuapp.com/
 
 ### Features
     1. User sign in/out/authentication
