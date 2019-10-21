@@ -5,7 +5,7 @@
 
 ### Project requirements:
     User authentication, database storage, rails backend
-    [Live deploy]: (https://splurty-megan-young.herokuapp.com/)
+    [Live deploy](https://splurty-megan-young.herokuapp.com/)
 
 ### Media:
     <img width="892" alt="splurty screenshot" src="https://user-images.githubusercontent.com/48420271/67197511-ccaa8900-f3b1-11e9-98db-b81c7ca97c74.PNG">
