@@ -25,5 +25,6 @@
     https://github.com/Jadsia/splurty
 
 ### Support:
-    Bug reports and feature requests can be filed with the rest for the Ruby on Rails project here:             https://github.com/Jadsia/splurty/issues
+    Bug reports and feature requests can be filed with the rest for the Ruby on Rails project here
+    https://github.com/Jadsia/splurty/issues
 
